@@ -13,8 +13,8 @@ html, body {
     color: var(--text-color);
 }
 
-form{
-    width: 350px;
+.container{
+    max-width: 350px;
     margin: 70px auto 0 auto;
     padding: 20px;
     border-radius: 5px;
