@@ -4,6 +4,10 @@
     --text-color: whitesmoke;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -33,6 +37,7 @@ legend{
     font-size: 20px;
     font-weight: 700;
     color: var(--secondary-color);
+    text-shadow: 1px 1px 1px var(--text-color);
 }
 
 label{
@@ -82,8 +87,16 @@ button:focus {
 
 }
 
+p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
 .modal {
     display: none;
+    flex-direction: column;
     position: fixed;
     right: 0;
     left: 0;
@@ -98,29 +111,29 @@ button:focus {
     color: var(--secondary-color);  
 }
 
-.modal p {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 700;
-}
-
 .buttons-holder {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 20px;
-    height: 110px;
+    flex-grow: 1;
 }
 
 .modal-button {
     color: var(--secondary-color);
-    background-color: var(--text-color);
+    background-color: hsla(348, 25%, 61%, 0.255);    
     border: 2px solid var(--secondary-color);
 }
 
 .modal-button:hover,
 .modal-button:focus {
-    background-color: hsla(348, 25%, 61%, 0.255);    
+    background-color: var(--text-color);
+
 }
 
+img {
+    max-width: 350px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
