@@ -37,7 +37,6 @@ fieldset {
 legend{
     font-size: 20px;
     color: var(--secondary-color);
-    text-shadow: 1px 1px 1px var(--text-color);
 }
 
 label{
