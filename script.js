@@ -11,12 +11,7 @@ const password = document.getElementById('password');
 newAccountForm.addEventListener('submit', function(e) {
     e.preventDefault();
     modal.style.display = 'flex';
-
-
     confirmMessage.innerHTML = `Please confirm account creation for <span class="bold">${userEmail.value}</span>`;
-
-
-
 });
 
 cancelBtn.addEventListener('click', function() {
@@ -27,9 +22,8 @@ cancelBtn.addEventListener('click', function() {
 
 confirmBtn.addEventListener('click', function() {
     modal.style.display = 'none';
-    const userEmail = document.getElementById('email').value;
     container.innerHTML = `
-    <p>Hello user with email <span class="bold">${userEmail}</span></p>
+    <p>Hello user with email <span class="bold">${userEmail.value}</span></p>
     <img src="/hello.webp" alt="Hello user">
     `;
 })

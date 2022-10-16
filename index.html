@@ -15,7 +15,7 @@
             <div class="container" id="container">
                 <form id="new-account-form">
                     <fieldset>
-                        <legend>Create an account</legend>
+                        <legend class="bold">Create an account</legend>
                             <label for="email">Email (required)</label>
                             <input 
                                 type="email" 
@@ -31,15 +31,15 @@
                                 required
                                 >
                     </fieldset>
-                            <button type="submit" class="submit-button" id="submit-btn">Submit</button>
+                    <button type="submit" class="submit-button" id="submit-btn">Submit</button>
                 </form> 
-        </div>   
+            </div>   
         </main>
         <div class="modal" id="modal">
-            <p id="confirm-message">Please confirm account creation for</p>
+            <p id="confirm-message"></p>
             <div class="buttons-holder">
-                <button type="cancel" class="modal-button" id="cancel-btn">Cancel</button>
-                <button type="submit" class="modal-button" id="confirm-btn">Confirm</button>
+                <button type="cancel" class="modal-button bold" id="cancel-btn">Cancel</button>
+                <button type="submit" class="modal-button bold" id="confirm-btn">Confirm</button>
             </div>
         </div>
         <script src="/script.js"></script>
